@@ -25,6 +25,8 @@ If you run it as it is, is going to connect to this [repo](https://github.com/al
 the `official_target.bmp`. If you don't want to do that you can open `config.js` and
 set `autoupdateRemoteTarget: false`. This will make it use `target.bmp` instead.
 
+To help draw and defend the triangle flag in the middle, opne `config.js` and change `REMOTE_TARGET_URL` to `https://raw.githubusercontent.com/alexherce/reddit-placebot/master/official_triangle_flag.bmp`
+
 Every time it's time to place a pixel the bot will download the board
 (and latest remote target) and find the first pixel that doesn't match
 the target, and fill it with the correct color.
