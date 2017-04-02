@@ -16,8 +16,8 @@ npm install
 
 ## Configuration
 
-Change `users.json` to add your username and password
-of your account and all your throwaways.
+Change `users.example.json` to `users.json` and add your reddit username and password
+of your account and all your throwaways. You can add more than one.
 
 ## Target Drawing
 
