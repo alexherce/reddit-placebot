@@ -1,6 +1,6 @@
 # Reddit Place Bot
 
-This is a bot I made for the Reddit [/r/place](https://www.reddit.com/r/place/) event of 2017 April Fools Day.
+This is a bot for the Reddit [/r/place](https://www.reddit.com/r/place/) event of 2017 April Fools Day.
 
 Bot created by [Zequez](https://github.com/Zequez/reddit-placebot)
 
@@ -10,7 +10,7 @@ You need to have [NodeJS installed](https://nodejs.org/es/download/)
 
 ```
 git clone https://github.com/alexherce/reddit-placebot
-cd reddit-placebot
+cd reddit-placebot (or go to the directory where you downloaded it)
 npm install
 ```
 
@@ -21,7 +21,7 @@ of your account and all your throwaways.
 
 ## Target Drawing
 
-If you run it as it is, is going to connect to the [repo](https://github.com/alexherce/reddit-placebot) repository and try to draw
+If you run it as it is, is going to connect to this [repo](https://github.com/alexherce/reddit-placebot) and try to draw
 the `official_target.bmp`. If you don't want to do that you can open `config.js` and
 set `autoupdateRemoteTarget: false`. This will make it use `target.bmp` instead.
 
