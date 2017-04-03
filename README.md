@@ -21,13 +21,13 @@ Bot creado por [Zequez](https://github.com/Zequez/reddit-placebot)
 
 ## Dibujar en r/place con el bot
 
-El bot por default dibuja [`official_target.bmp`](https://raw.githubusercontent.com/alexherce/reddit-placebot/master/official_target.bmp) en r/place.
+El bot por default dibuja el archivo [`official_target.bmp`](https://raw.githubusercontent.com/alexherce/reddit-placebot/master/official_target.bmp) de este repositorio en r/place. Todos los bots por default usan este archivo para mantener coordinacion. Si quieres poner algo con todos los bots de r/mexico, entra al Discord del sub.
 
-Si quieres dibujar otra cosa, abre el archivo `config.js` y cambia `autoupdateRemoteTarget: false`. Eso hara que el bot use `target.bmp` como mapa para dibujar en r/place. Edita `target.bmp` a tu gusto.
+Si quieres dibujar otra cosa, abre el archivo `config.js` y cambia `autoupdateRemoteTarget: false`. Eso hara que el bot use `target.bmp` como mapa para dibujar en r/place en lugar de jalar el `official_target.bmp` de este repositorio. Edita `target.bmp` a tu gusto.
 
 NOTA: De preferencia no cambies el target, asi todos en r/mexico podemos dibujar lo mismo en coordinacion.
 
-Cada que sea tiempo de dibujar un pixel, el bot bajara la imagen de este git, comparara los pixeles y encontrara el primero que no concuerde para despues pintarlo correctamente de acuerdo al target.
+Cada que sea tiempo de dibujar un pixel, el bot bajara la imagen de este git, comparara los pixeles y encontrara el primero que no concuerde para despues pintarlo de acuerdo a la imagen.
 
 ## IMPORTANTE: Sobre los colores
 
