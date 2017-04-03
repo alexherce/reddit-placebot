@@ -22,6 +22,8 @@ npm install
 Change `users.example.json` to `users.json` and add your reddit username and password
 of your account and all your throwaways. You can add more than one.
 
+If you previously ran the bot and you changed the users in `users.json`, erase `queues.json` and `cookies.json` and run it again.
+
 ## Target Drawing
 
 If you run it as it is, is going to connect to this [repo](https://github.com/alexherce/reddit-placebot) and try to draw
