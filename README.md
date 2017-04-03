@@ -8,7 +8,7 @@ Bot creado por [Zequez](https://github.com/Zequez/reddit-placebot)
 
 1. Descargar NodeJS. [Click aquí para descargarlo.](https://nodejs.org/es/download/)
 2. Descargar los archivos del git. Hay 2 opciones para hacer esto:
-    1. Abre terminal (Mac o Linux) o CMD (Windows) y escribe ```git clone https://github.com/alexherce/reddit-placebot``` (Recomendado, pero si estas en Windows, usa la 2da opción, es mas fácil)
+    1. Abre terminal (Mac o Linux) o CMD (Windows) y escribe ```git clone https://github.com/alexherce/reddit-placebot``` (Recomendado, pero si estas en Windows usa la opción 2, es mas fácil)
     2. Descargar como zip y descomprimir. [Click aquí para descargar el zip](https://github.com/alexherce/reddit-placebot/archive/master.zip)
 3. En terminal (Mac y Linux) o CMD (Windows), ve al folder que descargaste (y extrajiste, si fue el caso) usando ```cd```. [Ve estas instrucciones si no sabes como](http://es.wikihow.com/cambiar-directorios-en-el-Command-Prompt)
 4. Escribe ```npm install``` y da enter. Continúa leyendo las instrucciones
