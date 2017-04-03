@@ -9,15 +9,15 @@ Bot creado por [Zequez](https://github.com/Zequez/reddit-placebot)
 1. Descargar NodeJS. [Click aqui para descargarlo.](https://nodejs.org/es/download/)
 2. Descargar los archivos del git. Hay 2 opciones para hacer esto:
     1. Abre terminal (Mac o Linux) o CMD (Windows) y escribe ```git clone https://github.com/alexherce/reddit-placebot``` (Recomendado, pero si estas en Windows, usa la 2da opcion, es mas facil)
-    2. Descargar como zip y descomprimir.
+    2. Descargar como zip y descomprimir
 3. En terminal (Mac y Linux) o CMD (Windows), ve al folder que descargaste (y extraiste, si fue el caso) usando ```cd```
-4. Escribe ```npm install``` y da enter. Continua leyendo las instrucciones.
+4. Escribe ```npm install``` y da enter. Continua leyendo las instrucciones
 
 ## Configuracion
 
-1. Abre el archivo `users.example.json`, cambia los datos con tus usuarios y passwords. NOTA: puedes tener mas de 1 cuenta, pero la ultima linea no debe llevar coma al final
+1. Abre el archivo `users.example.json`, cambia los datos con tus usuarios y passwords. NOTA: puedes tener mas de 1 cuenta, pero la ultima linea no debe llevar coma al final. Para que funcione con r/place, la cuenta debe haber sido abierta antes del 31 de marzo del 2017
 2. Guarda el archivo como `users.json`
-3. Si ejecutaste previamente el bot, borra los archivos `queues.json` y `cookies.json` antes de correrlo de nuevo.
+3. Si ejecutaste previamente el bot, borra los archivos `queues.json` y `cookies.json` antes de correrlo de nuevo
 
 ## Dibujar en r/place con el bot
 
