@@ -68,7 +68,8 @@ function userRun (user) {
       let action = boardDiffer(buffers[0], buffers[1])
       if (action) {
         if (action.color === -1) {
-          throw `Invalid color at X: ${action.x} Y: ${action.y}`
+            console.log('WARNING: Invalid color in BMP file at X: %d Y: %d', action.x, action.y)
+            return userPaint(user, 0, 0, 0)
         }
         return userPaint(user, action.x, action.y, action.color)
       } else {
