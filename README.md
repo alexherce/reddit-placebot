@@ -33,7 +33,7 @@ Cada que sea tiempo de dibujar un pixel, el bot bajara la imagen de este git, co
 
 Si editas los targets BMP, necesitas usar los mismos colores que estan en el archivo `colors.js`. Ahi puedes encontrar los codigos RGB para los colores permitidos en r/place. El bot NO adivina similaridades de color. Si un color en los BMP no concuerda, dibujara un pixel blanco en 0, 0 (un pixel desperdiciado).
 
-El color `#ff00ff` en los targets es la manera de indicarle al bot que lo ignore. De esta manera puedes delimitar el area a dibujar. Todo lo que este del color `#ff00ff` lo ignorara.
+El color `#ff00ff` (magenta) en los targets es la manera de indicarle al bot que lo ignore. De esta manera puedes delimitar el area a dibujar. Todo lo que este de color `#ff00ff` lo ignorara.
 
 ## Uso
 
