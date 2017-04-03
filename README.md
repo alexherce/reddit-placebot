@@ -1,64 +1,51 @@
-# Reddit Place Bot for r/Mexico
+# Reddit Place Bot para r/Mexico
 
-This is a bot for the Reddit [/r/place](https://www.reddit.com/r/place/) event of 2017 April Fools Day.
+Bot para Reddit [/r/place](https://www.reddit.com/r/place/) de r/Mexico.
 
-Bot created by [Zequez](https://github.com/Zequez/reddit-placebot)
+Bot creado por [Zequez](https://github.com/Zequez/reddit-placebot)
 
-## Installation
+## Instalacion
 
-You need to have [NodeJS installed, click here to download](https://nodejs.org/es/download/)
+1. Descargar NodeJS. [Click aqui para descargarlo.](https://nodejs.org/es/download/)
+2. Descargar los archivos del git. Hay 2 opciones para hacer esto:
+  1. ```git clone https://github.com/alexherce/reddit-placebot``` (Si estas en Windows, usa la 2da opcion es mas facil)
+  2. Descargar como zip y descomprimir.
+3. Abre terminal (Mac y Linux) o cmd (Windows), ve al folder que descargaste (y extraiste, si fue el caso) usando ```cd```
+4. Escribe ```npm install``` y da enter. Continua leyendo las instrucciones.
 
-Once you have it installed, follow the next steps:
+## Configuracion
 
-Open a new terminal/cmd and type (if you have windows, you can download the zip from github instead of doing git clone):
-```
-git clone https://github.com/alexherce/reddit-placebot
-cd reddit-placebot (or go to the directory where you downloaded it)
-npm install
-```
+1. Abre el archivo `users.example.json`, cambia los datos con tus usuarios y passwords. NOTA: puedes tener mas de 1 cuenta, pero la ultima linea no debe llevar coma al final
+2. Guarda el archivo como `users.json`
+3. Si ejecutaste previamente el bot, borra los archivos `queues.json` y `cookies.json` antes de correrlo de nuevo.
 
-## Configuration
+## Dibujar en r/place con el bot
 
-Change `users.example.json` to `users.json` and add your reddit username and password
-of your account and all your throwaways. You can add more than one.
+El bot por default dibuja [`official_target.bmp`](https://raw.githubusercontent.com/alexherce/reddit-placebot/master/official_target.bmp) en r/place.
 
-If you previously ran the bot and you changed the users in `users.json`, erase `queues.json` and `cookies.json` and run it again.
+Si quieres dibujar otra cosa, abre el archivo `config.js` y cambia `autoupdateRemoteTarget: false`. Eso hara que el bot use `target.bmp` como mapa para dibujar en r/place. Edita `target.bmp` a tu gusto.
 
-## Target Drawing
+NOTA: De preferencia no cambies el target, asi todos en r/mexico podemos dibujar lo mismo en coordinacion.
 
-If you run it as it is, is going to connect to this [repo](https://github.com/alexherce/reddit-placebot) and try to draw
-the [`official_target.bmp`](https://raw.githubusercontent.com/alexherce/reddit-placebot/master/official_target.bmp). This image defends the current r/mexico letters and flag. If you want to add something to the image to draw or defend, ask in the Discord.
+Cada que sea tiempo de dibujar un pixel, el bot bajara la imagen de este git, comparara los pixeles y encontrara el primero que no concuerde para despues pintarlo correctamente de acuerdo al target.
 
-If you don't want to do that you can open `config.js` and
-set `autoupdateRemoteTarget: false`. This will make it use `target.bmp` instead. You have to edit the `target.bmp` to draw what you want.
+## IMPORTANTE: Sobre los colores
 
-To help draw and defend the triangle flag in the middle, opne `config.js` and change `REMOTE_TARGET_URL` to `https://raw.githubusercontent.com/alexherce/reddit-placebot/master/official_triangle_flag.bmp`
+Si editas los targets BMP, necesitas usar los mismos colores que estan en el archivo `colors.js`. Ahi puedes encontrar los codigos RGB para los colores permitidos en r/place. El bot NO adivina similaridades de color. Si un color en los BMP no concuerda, dibujara un pixel blanco en 0, 0 (un pixel desperdiciado).
 
-Every time it's time to place a pixel the bot will download the board
-(and latest remote target) and find the first pixel that doesn't match
-the target, and fill it with the correct color.
+El color `#ff00ff` en los targets es la manera de indicarle al bot que lo ignore. De esta manera puedes delimitar el area a dibujar. Todo lo que este del color `#ff00ff` lo ignorara.
 
-## About Colors
+## Uso
 
-Since I honestly couldn't figure out how to make transparent BMP files I just
-set it so that the color `#ff00ff` is considered transparent. Anything transparent
-will be ignored.
-
-You have to use the exact same colors as the board (see `colors.js` for RGB codes) or the app is gonna throw
-an error, it's not smart enough to guess the colors based on similarity.
-
-## Usage
-
-To run, simply type the next line in the terminal/cmd:
-
+Para usar, simplemente escribe en la terminal/cmd:
 ```
   npm run start
 ```
+NOTA: Necesitas estar sobre el folder que descargaste de este git en el paso 2.
 
-It'll keep keep drawing forever and if it can't draw anymore it's gonna
-wait until something breaks and fix it.
+Esto correrá el bot, si no encuentra nada que dibujar, esperará a que algo cambie para luego corregirlo.
 
-To stop, use CTRL + C.
+Para detener el bot, usa CTRL + C en la terminal/cmd donde se estaba ejecutando.
 
 ## License
 
