@@ -10,7 +10,7 @@ Bot creado por [Zequez](https://github.com/Zequez/reddit-placebot)
 2. Descargar los archivos del git. Hay 2 opciones para hacer esto:
     1. Abre terminal (Mac o Linux) o CMD (Windows) y escribe ```git clone https://github.com/alexherce/reddit-placebot``` (Recomendado, pero si estas en Windows, usa la 2da opcion, es mas facil)
     2. Descargar como zip y descomprimir
-3. En terminal (Mac y Linux) o CMD (Windows), ve al folder que descargaste (y extraiste, si fue el caso) usando ```cd```
+3. En terminal (Mac y Linux) o CMD (Windows), ve al folder que descargaste (y extraiste, si fue el caso) usando ```cd```. [Ve estas instrucciones si no sabes como](http://es.wikihow.com/cambiar-directorios-en-el-Command-Prompt)
 4. Escribe ```npm install``` y da enter. Continua leyendo las instrucciones
 
 ## Configuracion
